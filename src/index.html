@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<header>
+    <center><nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('planner')">Planner</a></li>
+        </ul>
+    </nav></center>
+</header>
+
+<body>
+<br>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="logo-container">
+            <img src="hi.png" alt="Meal Finder logo" class="logo">
+        </div>
+        <center>
+            <h2>Welcome to Jat Foodies !</h2>
+            <input type="text" id="search-input" placeholder="Enter meal name or ingredient">
+            <div>
+                <label>
+                    <input type="radio" name="search-type" value="meal" checked> Meal
+                </label>
+                <label>
+                    <input type="radio" name="search-type" value="ingredient"> Ingredient
+                </label>
+            </div>
+            <button onclick="searchMeal()">Search</button>
+            <div id="meal-info" class="meal-info-container"></div>
+        </center>
+    </section>
+
+    <!-- Planner Section -->
+    <section id="planner" class="hidden">
+        <center>
+            <h2>Meal Planner</h2>
+            <input type="text" id="meal-planner" placeholder="Add meal to planner">
+            <button onclick="addMeal()">Add Meal</button>
+            <div id="meal-planner-list" class="planner-container"></div>
+    
+            <h2>Grocery List</h2>
+            <input type="text" id="grocery-item" placeholder="Add grocery item">
+            <button onclick="addGrocery()">Add Grocery</button>
+            <ul id="grocery-list" class="grocery-list"></ul>
+            
+    
+            <!-- Save button -->
+            <button onclick="saveToFile()">Save to File</button>
+
+        </center>
+    </section>
+
+
+    </section>
+
+
+    <!-- JavaScript file -->
+    <script src="ind.js" defer></script>
+    <footer>
+        
+        
+        <!-- Social Media Links -->
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 JAT MealFinder.</p>
+            </div>
+            <div class="footer-left">
+                <p>Follow us on social media</p>
+                <div class="social-icons">
+                                                        
+                </div>
+            </div>
+                
+        </div>
+    
+    </footer>
+    
+</body>
+
+
+</html>
